@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NoMorePrior.NoActionBar"
+        android:configChanges="orientation|screenSize"
+        android:usesCleartextTraffic="true"
+        android:hardwareAccelerated="true"
+
+        tools:targetApi="33">
+        <activity
+            android:name=".Activities.PlayerName"
+            android:screenOrientation="landscape"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".Activities.SplashScreen"
+            android:exported="true"
+            android:screenOrientation="landscape">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".Activities.SecondActivity"
+            android:exported="false"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".Activities.FirstActivity"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|screenSize"
+            >
+
+        </activity>
+
+
+
+        <service android:name=".Useful.AudioService"/>
+
+        <meta-data android:name="applovin.sdk.key"
+            android:value="2bCWO0b-G550RbEZxu8lZENRRT5mNXk1UOGnFui5Tx3FD9Gbwz07KThAhRLIc9ALwtFTv1x6zyzZko55Pua8pg"/>
+    </application>
+
+</manifest>

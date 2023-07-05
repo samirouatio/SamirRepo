@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Learning Tricks</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="maxSdkKey">2bCWO0b-G550RbEZxu8lZENRRT5mNXk1UOGnFui5Tx3FD9Gbwz07KThAhRLIc9ALwtFTv1x6zyzZko55Pua8pg</string>
+    <string name="MyJsonUrl">https://amazingapkforyou.site/MyApps/NoMorePrior</string>
+    <string name="rating_text">Please take a moment to rate this app.\nThanks for your support!</string>
+</resources>

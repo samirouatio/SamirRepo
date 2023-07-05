@@ -1,0 +1,62 @@
+name: get aab
+on:
+  push:
+    branches: [ master ]
+env:
+  KEY_ALIAS: samir
+  KEY_PASSWORD: ElninoSamir123
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout the repository
+        uses: actions/checkout@v2
+      - name: Set up Java
+        uses: actions/setup-java@v2
+        with:
+          distribution: "zulu"
+          java-version: 11
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v2
+      - name: Give Access
+        run: chmod +x gradlew
+      - name: Generate keystore
+        run: |
+          KEY_ALIAS=${{ env.KEY_ALIAS }}
+          KEY_PASSWORD=${{ env.KEY_PASSWORD }}
+          keytool -genkey -v -keystore keystore.jks -alias $KEY_ALIAS -keyalg RSA -keysize 2048 -validity 10000 -storepass $KEY_PASSWORD -keypass $KEY_PASSWORD -dname "CN=Samir El Ouati"
+          echo "Keystore generated at $(pwd)/keystore.jks"
+        env:
+          KEY_ALIAS: ${{ env.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ env.KEY_PASSWORD }}
+      - name: Save keystore information
+        run: |
+          echo "keyAlias=$KEY_ALIAS" > keystore_info.txt
+          echo "keyPassword=$KEY_PASSWORD" >> keystore_info.txt
+          echo "storeFile=keystore.jks" >> keystore_info.txt
+          echo "storePassword=$KEY_PASSWORD" >> keystore_info.txt
+        env:
+          KEY_ALIAS: ${{ env.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ env.KEY_PASSWORD }}
+      - name: Move keystore file
+        run: |
+          mv /home/runner/work/SamirRepo/SamirRepo/keystore.jks /home/runner/work/SamirRepo/SamirRepo/app/keystore.jks
+      - name: Build AAB
+        run: ./gradlew bundleRelease
+        env:
+          KEY_ALIAS: ${{ env.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ env.KEY_PASSWORD }}
+      - name: Sign AAB
+        run: jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 -keystore /home/runner/work/SamirRepo/SamirRepo/app/keystore.jks -storepass $KEY_PASSWORD -keypass $KEY_PASSWORD app/build/outputs/bundle/release/app-release.aab $KEY_ALIAS
+        env:
+          KEY_ALIAS: ${{ env.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ env.KEY_PASSWORD }}
+      - name: Upload AAB
+        uses: actions/upload-artifact@v2
+        with:
+          name: Amanda Adventurer All Endings AAB + info
+          path: |
+            app/build/outputs/bundle/release/app-release.aab
+            keystore_info.txt
+            /home/runner/work/SamirRepo/SamirRepo/app/keystore.jks

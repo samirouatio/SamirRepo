@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="SliderTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/mainColorC</item>
+        <item name="colorAccent">@color/mainColorC</item>
+        <item name="colorPrimaryDark">@color/mainColorC</item>
+    </style>
+
+    <style name="MyRatingBar" parent="Widget.AppCompat.RatingBar">
+        <!-- non selected star color-->
+        <item name="colorControlNormal"> #4D000000</item>
+        <!--  selected star color-->
+
+        <item name="colorControlActivated">@color/start</item>
+    </style>
+
+
+</resources>

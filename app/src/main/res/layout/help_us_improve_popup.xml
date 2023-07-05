@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="@dimen/_165sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mylinearshape"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/_12sdp"
+        android:paddingHorizontal="@dimen/_7sdp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_17sdp"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:letterSpacing="0.01"
+            android:textAllCaps="false"
+            android:text="Help us Improve"
+            android:gravity="center_horizontal|bottom"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/desctiption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_7sdp"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:text="One Time Only !"
+            android:layout_marginTop="@dimen/_2ssp"
+            android:layout_marginBottom="@dimen/_4ssp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_gravity="center"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:text="Skip"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/not_okay"
+                android:layout_weight="1"
+                android:id="@+id/Skip"
+                android:textSize="@dimen/_9sdp"
+                android:letterSpacing="0.02"
+                android:textStyle="bold|italic"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:text="Okay !"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/okay"
+                android:layout_weight="1"
+                android:id="@+id/Okay"
+                android:textSize="@dimen/_9sdp"
+                android:letterSpacing="0.02"
+                android:textStyle="bold|italic"
+                android:textAlignment="center"
+
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
