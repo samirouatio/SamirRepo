@@ -1,0 +1,8 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape>
+            <corners android:radius="@dimen/_3sdp" />
+            <solid android:color="@color/rating"/>
+        </shape>
+    </item>
+</layer-list>

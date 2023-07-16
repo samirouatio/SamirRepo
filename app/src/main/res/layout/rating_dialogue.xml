@@ -1,68 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/_2sdp">
 
     <LinearLayout
-        android:layout_margin="@dimen/_10sdp"
-        android:background="@drawable/card_dotted"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/card_dotted"
+        android:orientation="vertical"
+        android:padding="@dimen/_3sdp">
 
         <TextView
-            android:textSize="@dimen/_17sdp"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:layout_marginTop="@dimen/_5sdp"
-            android:lineSpacingExtra="@dimen/_10sdp"
-            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/rating_text"/>
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/roboto_reg"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/_8sdp"
+            android:padding="@dimen/_3sdp"
+            android:text="@string/rating_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
 
-        <RatingBar
-            android:layout_width="wrap_content"
+        <com.willy.ratingbar.ScaleRatingBar
+            android:id="@+id/simpleRatingBar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:rating="2"
-            android:theme="@style/MyRatingBar"
-            android:id="@+id/stars"/>
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:srb_clearRatingEnabled="true"
+            app:srb_clickable="true"
+            app:srb_drawableEmpty="@drawable/emptyw"
+            app:srb_drawableFilled="@drawable/filled"
+            app:srb_isIndicator="false"
+            app:srb_minimumStars="1"
+            app:srb_numStars="5"
+            app:srb_rating="3"
+            app:srb_scrollable="true"
+            app:srb_starHeight="@dimen/_27sdp"
+            app:srb_starPadding="@dimen/_7sdp"
+            app:srb_starWidth="@dimen/_27sdp"
+            app:srb_stepSize="1"></com.willy.ratingbar.ScaleRatingBar>
 
         <LinearLayout
-            android:padding="@dimen/_7sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="@dimen/_7sdp">
 
             <TextView
                 android:id="@+id/cancel"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_32sdp"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_28sdp"
                 android:layout_marginEnd="@dimen/_5sdp"
                 android:layout_weight="1"
+                android:alpha="0.7"
+                android:background="@drawable/card_main_border"
+                android:fontFamily="@font/roboto_reg"
                 android:gravity="center"
                 android:text="Cancel"
-                android:alpha="0.7"
-                android:textStyle="bold"
-                android:background="@drawable/card_main_border"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_17sdp" />
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/rating"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_32sdp"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_28sdp"
                 android:layout_marginStart="@dimen/_5sdp"
                 android:layout_weight="1"
+                android:background="@drawable/card_main2"
+                android:fontFamily="@font/roboto_reg"
                 android:gravity="center"
                 android:text="Rate"
-                android:textStyle="bold"
-                android:background="@drawable/card_main2"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_17sdp" />
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 

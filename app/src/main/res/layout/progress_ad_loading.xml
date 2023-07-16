@@ -1,42 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:background="@color/dark_transparent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/dark_transparent"
+    android:gravity="center"
+    android:orientation="vertical"
 
     >
 
     <LinearLayout
-        android:orientation="vertical"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:padding="@dimen/_15ssp"
+        android:background="@drawable/btn_x"
         android:gravity="center"
         android:minWidth="@dimen/_200sdp"
-        android:background="@drawable/btn_x"
-        android:layout_width="@dimen/_250sdp"
-        android:layout_height="wrap_content">
+        android:orientation="vertical"
+        android:padding="@dimen/_15ssp">
 
         <TextView
-            android:textSize="@dimen/_15sdp"
-            android:textColor="@color/black"
-            android:gravity="center_horizontal|bottom"
+            android:id="@+id/adLoadingTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Please Wait... Ad loading!"/>
+            android:fontFamily="@font/roboto_reg"
+            android:gravity="center_horizontal|bottom"
+            android:text="Please Wait... Ad loading!"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
 
         <ProgressBar
             android:id="@+id/loading"
-            android:layout_gravity="center"
+            style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
-            android:layout_marginTop="@dimen/_10sdp"
             android:layout_height="@dimen/_5sdp"
-            android:progress="80"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
             android:indeterminate="true"
             android:indeterminateDrawable="@drawable/progess_gradient_splash"
-            android:progressDrawable="@drawable/progess_gradient_splash"
-            style="?android:attr/progressBarStyleHorizontal"/>
+            android:progress="80"
+            android:progressDrawable="@drawable/progess_gradient_splash" />
 
     </LinearLayout>
 

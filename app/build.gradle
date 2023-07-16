@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.simulation.kingapp.learning.newtricks'
+    namespace 'com.HorrorGame.BasementAccident.GrimaceBirthday.TheGrimaceShake'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.simulation.kingapp.learning.newtricks"
+        applicationId "com.HorrorGame.BasementAccident.GrimaceBirthday.TheGrimaceShake"
         minSdk 21
         targetSdk 33
         versionCode 1
@@ -44,6 +44,7 @@ dependencies {
     implementation 'com.applovin:applovin-sdk:+'
     implementation 'com.applovin.mediation:facebook-adapter:+'
     implementation 'com.applovin.mediation:yandex-adapter:+'
+//    implementation 'androidx.annotation:annotation:1.5.0'
 
     // glide
     implementation 'com.github.bumptech.glide:glide:4.12.0'
@@ -61,5 +62,8 @@ dependencies {
 
     //volley
     implementation 'com.android.volley:volley:1.2.1'
+
+    //rating
+    implementation 'com.github.ome450901:SimpleRatingBar:1.5.1'
 
 }
