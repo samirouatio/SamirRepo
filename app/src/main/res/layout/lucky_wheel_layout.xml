@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.Battle_Simulation_Game.Speakerman.TitanTvMan.SkibidiToiletWar.MyClasses.SpinningWheel.SpinningView
+        <com.CatMeme.BananaSeries.CatWhinySituation.BananaCatCrying.MyClasses.SpinningWheel.SpinningView
             android:id="@+id/wv_main_wheel"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

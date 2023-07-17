@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.Battle_Simulation_Game.Speakerman.TitanTvMan.SkibidiToiletWar'
+    namespace 'com.CatMeme.BananaSeries.CatWhinySituation.BananaCatCrying'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.Battle_Simulation_Game.Speakerman.TitanTvMan.SkibidiToiletWar"
+        applicationId "com.CatMeme.BananaSeries.CatWhinySituation.BananaCatCrying"
         minSdk 21
         targetSdk 33
         versionCode 1
