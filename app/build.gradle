@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.HorrorGame.BasementAccident.GrimaceBirthday.TheGrimaceShake'
+    namespace 'com.Battle_Simulation_Game.Speakerman.TitanTvMan.SkibidiToiletWar'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.HorrorGame.BasementAccident.GrimaceBirthday.TheGrimaceShake"
+        applicationId "com.Battle_Simulation_Game.Speakerman.TitanTvMan.SkibidiToiletWar"
         minSdk 21
         targetSdk 33
         versionCode 1

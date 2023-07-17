@@ -115,7 +115,7 @@
                     android:scaleType="fitXY"
                     android:src="@drawable/vector" />
 
-                <com.HorrorGame.BasementAccident.GrimaceBirthday.TheGrimaceShake.MyClasses.SpinningWheel.SpinningWheel
+                <com.Battle_Simulation_Game.Speakerman.TitanTvMan.SkibidiToiletWar.MyClasses.SpinningWheel.SpinningWheel
                     android:id="@+id/luckyWheel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
