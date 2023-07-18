@@ -115,7 +115,7 @@
                     android:scaleType="fitXY"
                     android:src="@drawable/vector" />
 
-                <com.CatMeme.BananaSeries.CatWhinySituation.BananaCatCrying.MyClasses.SpinningWheel.SpinningWheel
+                <com.SkibidiFullSeries.ToiletBossGman.SpeakerMan_TitanTvMan.SkibidiToiletWar.MyClasses.SpinningWheel.SpinningWheel
                     android:id="@+id/luckyWheel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

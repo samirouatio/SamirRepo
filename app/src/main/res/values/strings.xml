@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Whiny Banana Cat</string>
+    <string name="app_name">TvMan Skibidi War</string>
     <string name="action_settings">Settings</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="maxSdkKey">2bCWO0b-G550RbEZxu8lZENRRT5mNXk1UOGnFui5Tx3FD9Gbwz07KThAhRLIc9ALwtFTv1x6zyzZko55Pua8pg</string>
-    <string name="MyJsonUrl">https://amazingapkforyou.site/MyApps/Samir/WhinyBananaCatCrying</string>
+    <string name="MyJsonUrl">https://amazingapkforyou.site/MyApps/Samir/TitanTvManSkibidiToiletWar</string>
     <string name="rating_text">Please take a moment to rate this app.\nThanks for your support!</string>
 </resources>
