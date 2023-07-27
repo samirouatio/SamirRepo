@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".Activities.PlayerName">
+    tools:context=".Activities.PlayerName"
+    android:id="@+id/myLayout">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -55,7 +56,6 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/next"
                 android:layout_width="@dimen/_90sdp"
-
                 android:layout_height="@dimen/_29sdp"
                 android:layout_marginVertical="@dimen/_7sdp"
                 android:layout_marginLeft="@dimen/_10sdp"

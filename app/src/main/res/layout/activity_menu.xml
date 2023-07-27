@@ -8,7 +8,9 @@
     android:background="@color/black"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".Activities.MenuActivity">
+    tools:context=".Activities.MenuActivity"
+    android:id="@+id/myLayout"
+    >
 
     <!--    this was height wrap content-->
     <LinearLayout

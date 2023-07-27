@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".Activities.WalkthroughActivity">
+    tools:context=".Activities.WalkthroughActivity"
+    android:id="@+id/myLayout">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -132,16 +133,16 @@
 
                 />
 
-            <com.yandex.mobile.ads.banner.BannerAdView
-                android:id="@+id/yndxBanner"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:textAlignment="center"
-                android:visibility="gone"
+<!--            <com.yandex.mobile.ads.banner.BannerAdView-->
+<!--                android:id="@+id/yndxBanner"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:textAlignment="center"-->
+<!--                android:visibility="gone"-->
 
-                />
+<!--                />-->
         </LinearLayout>
     </LinearLayout>
 

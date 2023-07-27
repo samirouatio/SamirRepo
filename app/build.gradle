@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.SkibidiFullSeries.ToiletBossGman.SpeakerMan_TitanTvMan.SkibidiToiletWar'
+    namespace 'com.BananaCatSeries.WhinySituation.WhinyCatBananaCrying.BananaCatCrying'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.SkibidiFullSeries.ToiletBossGman.SpeakerMan_TitanTvMan.SkibidiToiletWar"
+        applicationId "com.BananaCatSeries.WhinySituation.WhinyCatBananaCrying.BananaCatCrying"
         minSdk 21
         targetSdk 33
         versionCode 1
